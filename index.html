@@ -1,0 +1,262 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="CleanTouch — Premium disposable gloves for professional hygiene and safety." />
+  <title>CleanTouch — Premium Disposable Gloves</title>
+
+  <!-- Fonts (CDN) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!-- WebGL Background -->
+  <div id="bg-wrap" aria-hidden="true">
+    <canvas id="webgl"></canvas>
+
+    <!-- Fallback if WebGL is unavailable -->
+    <div id="webgl-fallback" class="fallback" hidden>
+      <div class="fallback-inner">
+        <div class="fallback-badge">WebGL unavailable</div>
+        <h2>CleanTouch</h2>
+        <p>Premium disposable gloves for professional hygiene and safety.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="nav" id="top">
+    <a class="brand" href="#top" aria-label="CleanTouch home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-name">CleanTouch</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#products">Products</a>
+      <a href="#industries">Industries</a>
+      <a href="#quality">Quality</a>
+      <a href="#contact" class="btn btn-sm">Request a quote</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="pill" id="heroPill">
+          <span class="pill-dot"></span>
+          Hygiene-first • Premium B2B supply
+        </div>
+
+        <h1 class="hero-title" id="heroTitle">
+          Professional protection,
+          <span class="accent">cleanly designed</span>.
+        </h1>
+
+        <p class="hero-sub" id="heroSub">
+          CleanTouch is a premium disposable gloves brand for hygiene-critical environments —
+          designed for comfort, reliability, and confidence in every touch.
+        </p>
+
+        <div class="hero-cta" id="heroCta">
+          <a class="btn" href="#contact">Get wholesale pricing</a>
+          <a class="btn btn-ghost" href="#products">Explore glove types</a>
+        </div>
+
+        <div class="hero-metrics" id="heroMetrics">
+          <div class="metric">
+            <div class="metric-k">Nitrile • Latex • Vinyl</div>
+            <div class="metric-v">Core product lines</div>
+          </div>
+          <div class="metric">
+            <div class="metric-k">Bulk-ready</div>
+            <div class="metric-v">B2B purchasing</div>
+          </div>
+          <div class="metric">
+            <div class="metric-k">Spec-led</div>
+            <div class="metric-v">Clear sizing + thickness</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scrim" aria-hidden="true"></div>
+    </section>
+
+    <!-- Products -->
+    <section class="section" id="products">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">Gloves built for real workflows.</h2>
+          <p class="p">Minimal choices, maximum clarity — pick the line that matches your environment.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card">
+            <div class="card-top">
+              <div class="badge">Premium standard</div>
+              <h3>Nitrile</h3>
+            </div>
+            <p>Latex-free durability for healthcare, labs, industrial handling and long wear.</p>
+            <ul class="list">
+              <li>High puncture resistance</li>
+              <li>Great chemical tolerance</li>
+              <li>Comfortable fit</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <div class="badge">Tactile feel</div>
+              <h3>Latex</h3>
+            </div>
+            <p>Elastic, precise, and responsive — ideal for dexterity-focused clinical tasks.</p>
+            <ul class="list">
+              <li>Snug, flexible fit</li>
+              <li>Excellent touch sensitivity</li>
+              <li>Secure grip</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <div class="badge">Efficient value</div>
+              <h3>Vinyl</h3>
+            </div>
+            <p>Light duty protection for quick changes — food service, cleaning and front-of-house.</p>
+            <ul class="list">
+              <li>Easy on/off</li>
+              <li>Best for frequent replacement</li>
+              <li>Cost-effective</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Industries -->
+    <section class="section" id="industries">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">Where hygiene matters most.</h2>
+          <p class="p">CleanTouch supports teams who rely on consistency, safety, and clean presentation.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="panel">
+            <h3>Healthcare & Clinics</h3>
+            <p>Dependable barrier protection and predictable stock for daily patient care.</p>
+          </div>
+          <div class="panel">
+            <h3>Food Service & Catering</h3>
+            <p>Comfort and quick changes for prep lines and service stations.</p>
+          </div>
+          <div class="panel">
+            <h3>Laboratories</h3>
+            <p>Support for controlled environments and handling routines.</p>
+          </div>
+          <div class="panel">
+            <h3>Industrial & Printing</h3>
+            <p>Protection from oils, inks, solvents, residues — without sacrificing dexterity.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quality -->
+    <section class="section" id="quality">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">Trust is built on details.</h2>
+          <p class="p">Clear specs, reliable supply, and a clean purchasing experience for B2B teams.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="stat">
+            <div class="stat-k">Clear specs</div>
+            <div class="stat-v">Sizes, thickness options, use-case clarity</div>
+          </div>
+          <div class="stat">
+            <div class="stat-k">B2B-ready</div>
+            <div class="stat-v">Bulk orders, predictable fulfillment</div>
+          </div>
+          <div class="stat">
+            <div class="stat-k">Supply planning</div>
+            <div class="stat-v">Stable sourcing and repeat availability</div>
+          </div>
+        </div>
+
+        <div class="callout">
+          <p><strong>Fast quote:</strong> share glove type, size range, quantity, and delivery location — we’ll respond with pricing.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">Request a quote</h2>
+          <p class="p">No backend required — the form opens your email client with a prefilled message.</p>
+        </div>
+
+        <form class="form" id="quoteForm">
+          <div class="field">
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text" placeholder="Company name" autocomplete="organization" />
+          </div>
+
+          <div class="field">
+            <label for="name">Contact name</label>
+            <input id="name" name="name" type="text" placeholder="Full name" autocomplete="name" />
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@company.com" autocomplete="email" />
+          </div>
+
+          <div class="field">
+            <label for="details">What do you need?</label>
+            <textarea id="details" name="details" rows="5"
+              placeholder="Type (Nitrile/Latex/Vinyl), size (S/M/L/XL), qty, delivery city, any specs..."></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn" type="submit">Compose email inquiry</button>
+            <p class="fine">
+              Change <code>hello@cleantouch.example</code> inside <code>main.js</code> to your real email.
+            </p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="brand brand--footer">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-name">CleanTouch</span>
+          </div>
+          <p class="fine">Premium disposable gloves brand for professional hygiene and safety.</p>
+        </div>
+        <a class="fine" href="#top">Back to top</a>
+      </div>
+    </footer>
+  </main>
+
+  <!-- GSAP (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+  <!-- App -->
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
